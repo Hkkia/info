@@ -1,46 +1,163 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Clean, modern typeface */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #1b1b1b, #3a3a3a); /* Dark gradient background */
+    color: #ffffff;
+    text-shadow: 1px 1px 2px #000; /* Subtle glow for text */
 }
 
+/* Header */
 header {
-    background: #333;
-    color: #fff;
+    background-color: #dc143c; /* Crimson for a bold look */
+    color: white;
     padding: 1rem;
     text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
     font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-header nav a:hover {
-    text-decoration: underline;
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #202020;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #dc143c;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(220, 20, 60, 0.7);
+}
+
+/* Main Content */
 main {
     padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    text-align: center;
 }
 
 h1, h2 {
-    color: #333;
+    font-size: 2.5rem;
+    color: #dc143c;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 
+h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem auto;
+    color: #dcdcdc;
+    max-width: 800px;
+}
+
+/* Buttons */
+button {
+    background-color: #dc143c;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+    background-color: #a10e2a;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(220, 20, 60, 0.6);
+}
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.project-card {
+    background: #2c2c2c;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(220, 20, 60, 0.6);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dc143c;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #dc143c;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #a10e2a;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #333;
-    color: #fff;
-    margin-top: 2rem;
+    background: #202020;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #dc143c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
